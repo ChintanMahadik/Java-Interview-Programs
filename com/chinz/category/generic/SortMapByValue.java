@@ -15,11 +15,8 @@ public class SortMapByValue {
         System.out.println(treeMap);
 
         System.out.println("Sorted based on values");
-        List<Map.Entry<String, String>> list = new ArrayList<>();
-        for (Map.Entry<String, String> entry : map.entrySet()) {
-            list.add(entry);
-        }
-        Collections.sort(list, Map.Entry.comparingByValue());
+        List<Map.Entry<String, String>> list = new ArrayList<>(map.entrySet());
+        list.sort(Map.Entry.comparingByValue());
 
         Map<String, String> linkedHashMap = new LinkedHashMap<>();
         for (Map.Entry<String, String> entry : list) {

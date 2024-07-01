@@ -43,16 +43,14 @@ public class kthDiffElements {
         List<Integer> list = Arrays.asList(arr);
         Arrays.sort(arr);
 
-        for (int pt1 = 0,pt2=1; pt2 < arr.length;) {
-            if((arr[pt1]-arr[pt2])==k || (arr[pt2]-arr[pt1])==k){
-                System.out.println("Pair: (" + arr[pt1] + "," + arr[pt2]+ ")");
+        for (int pt1 = 0, pt2 = 1; pt2 < arr.length; ) {
+            if ((arr[pt1] - arr[pt2]) == k || (arr[pt2] - arr[pt1]) == k) {
+                System.out.println("Pair: (" + arr[pt1] + "," + arr[pt2] + ")");
                 pt1++;
                 pt2++;
-            }
-            else if ((arr[pt1]-arr[pt2])>k || (arr[pt2]-arr[pt1])>k){
+            } else if ((arr[pt1] - arr[pt2]) > k || (arr[pt2] - arr[pt1]) > k) {
                 pt1++;
-            }
-            else if ((arr[pt1]-arr[pt2])<k || (arr[pt2]-arr[pt1])<k){
+            } else if ((arr[pt1] - arr[pt2]) < k || (arr[pt2] - arr[pt1]) < k) {
                 pt2++;
             }
         }
