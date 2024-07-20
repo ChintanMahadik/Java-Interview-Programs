@@ -20,3 +20,7 @@ https://www.geeksforgeeks.org/java-main-method-public-static-void-main-string-ar
 https://www.geeksforgeeks.org/create-immutable-class-java/
 
 #Singleton classes
+https://www.geeksforgeeks.org/singleton-class-java/
+
+#Cyclic barrier
+https://www.baeldung.com/java-cyclic-barrier
