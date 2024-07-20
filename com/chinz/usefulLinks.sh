@@ -24,3 +24,7 @@ https://www.geeksforgeeks.org/singleton-class-java/
 
 #Cyclic barrier
 https://www.baeldung.com/java-cyclic-barrier
+
+#Countdown latch
+https://www.baeldung.com/java-countdown-latch
+
