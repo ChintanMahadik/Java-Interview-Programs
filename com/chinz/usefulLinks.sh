@@ -55,3 +55,7 @@ https://www.baeldung.com/java-countdown-latch
         System.out.println(1 / 0);
     }
 }
+
+# Custom name for thread in thread pool
+- ThreadFactory, overriden method can print custom names
+- ExecutorService.newThreadPool(3, threadFactory)
