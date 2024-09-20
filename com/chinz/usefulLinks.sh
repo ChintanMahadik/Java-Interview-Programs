@@ -28,3 +28,9 @@ https://www.baeldung.com/java-cyclic-barrier
 #Countdown latch
 https://www.baeldung.com/java-countdown-latch
 
+#java stream to find out max length word
+- .max((a,b) -> a.length.compareTo(b.length))
+
+#same data sent to multiple threads but if any one thread returns result then ignore other threads.
+- ExecutorService to take list of threads
+- service. invokeAny()
