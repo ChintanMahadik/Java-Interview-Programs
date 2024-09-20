@@ -34,3 +34,7 @@ https://www.baeldung.com/java-countdown-latch
 #same data sent to multiple threads but if any one thread returns result then ignore other threads.
 - ExecutorService to take list of threads
 - service. invokeAny()
+
+#design pattern used by rest and jdbctemplate
+- Template Method pattern
+- it manages all connection, error handling etc
