@@ -38,3 +38,20 @@ https://www.baeldung.com/java-countdown-latch
 #design pattern used by rest and jdbctemplate
 - Template Method pattern
 - it manages all connection, error handling etc
+
+#Uncaught Exception Handler
+# public class GlobalExceptionHandler {
+    public static void main(String[] args) {
+        // Set a global handler for uncaught exceptions
+        Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
+            @Override
+            public void uncaughtException(Thread t, Throwable e) {
+                System.out.println("Unhandled exception caught in thread: " + t.getName());
+                e.printStackTrace();
+            }
+        });
+
+        // Example: This will throw an unhandled ArithmeticException
+        System.out.println(1 / 0);
+    }
+}
